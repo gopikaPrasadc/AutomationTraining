@@ -8,9 +8,9 @@ import handlesleep.Pageutility;
 
 public class LoginPage {
 WebDriver driver;
-@FindBy(xpath="//*[@id='loginform-username']")
+@FindBy(xpath="//*[@id='loginform-username' and @value='asfsdfsd']")
 WebElement login;
-@FindBy(xpath="//*[@id='loginform-password']")
+@FindBy(xpath="//*[@id='lloginform-password' and @value='sdacscsdc']")
 WebElement pass;
 @FindBy(xpath="//*[@class='btn btn-default']")
 WebElement loginbutton;

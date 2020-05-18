@@ -14,7 +14,7 @@ import handlesleep.Pageutility;
 public class CompanyModule {
 	WebDriver driver;
 	JavascriptExecutor j;
-	@FindBy(xpath = "//*[text()='Company']")
+	@FindBy(xpath = "//*[text()='Company' and @href='/payrollapp/company/index']")
 	WebElement companyhead;
 	@FindBy(xpath = "//*[@name='Company[company_name]']")
 	WebElement companymainname;

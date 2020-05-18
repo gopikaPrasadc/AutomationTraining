@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import handlesleep.Pageutility;
 
@@ -27,7 +28,8 @@ public class HomePage {
 	public void logout() {
 
 	Pageutility.isElementLoaded(driver,username,3);
-	username.click();
+	Select usernamedropdown = new Select(username);
+	usernamedropdown.getOptions().get(0);
 	Pageutility.isElementLoaded(driver,username,3);
 	viewprofile.click();
 	Pageutility.isElementLoaded(driver,username,3);

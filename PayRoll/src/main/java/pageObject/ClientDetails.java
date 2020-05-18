@@ -15,7 +15,7 @@ public class ClientDetails extends ClientModule{
 		super(driver);
 		
 	}
-	@FindBy(xpath="//*[@href='/payrollapp/client/create']")
+	@FindBy(xpath="//*[@href='/payrollapp/client/create' text()='Create Client']")
 	WebElement CreateClientModule;
 	@FindBy(xpath="//*[@id='clientsearch-client_name']")
 	WebElement clientsearch;
